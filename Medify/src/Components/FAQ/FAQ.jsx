@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './faq.module.css';
+import styles from './FAQ.module.css';
 import { Accordion, AccordionSummary, AccordionDetails, Typography, Container, Box } from '@mui/material';
 
 import doctor from "../../assets/doctor-patient.jpg";
