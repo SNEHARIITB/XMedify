@@ -1,0 +1,27 @@
+.countainer{
+    height: 96px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.navicon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navmenu{
+    color: black !important;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.btn{
+    color: white !important;
+    border-radius: 8px !important;
+    text-decoration: none !important;
+    text-transform: none !important;
+    background-color: var(--primary-color) !important;
+}

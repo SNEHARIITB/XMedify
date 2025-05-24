@@ -1,0 +1,65 @@
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #f8fbff;
+}
+
+.textSection {
+  flex: 1 1 40%;
+  max-width: 500px;
+}
+
+.subheading {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: #0070f3;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.statsGrid {
+  gap: 1.5rem;
+}
+
+.statCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.statCard:hover {
+  transform: translateY(-5px);
+}
+
+.statCard h3 {
+  margin: 0.75rem 0 0.25rem;
+  font-size: 1.5rem;
+  color: #1a1a1a;
+}
+
+.statCard p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #666;
+}

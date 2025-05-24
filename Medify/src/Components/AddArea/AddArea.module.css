@@ -1,0 +1,12 @@
+.container{
+    height:535px;
+    
+}
+.boximg{
+    display: flex;
+}
+.card img{
+    height: 200px;
+    width: 400px;
+    border-radius: 20px;
+}

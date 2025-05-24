@@ -1,0 +1,27 @@
+.imgbox{
+    width: 50%;
+    border: 5px solid black !important;
+    position: relative;
+}
+.imagebox img{
+    height: 275px;
+    width: 332px;
+
+}
+.phone{
+    height: 34px !important;
+    width: 43px !important;
+}
+.img1{
+    /* position: absolute; */
+    width: 332;
+    height: 275;
+    top: 50px;
+    left: 325px;
+    border-width: 5px;
+
+}
+.gridcont{
+    width: 50%;
+    border: 5px solid black !important;
+}
