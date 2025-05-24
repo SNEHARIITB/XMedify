@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from './contact.module.css';
+import styles from './Contact.module.css';
 import { Button, TextField, Typography, Box } from '@mui/material';
 
 import mobile from "../../assets/mobileouter.png";

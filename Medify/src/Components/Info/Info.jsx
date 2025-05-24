@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./info.module.css";
+import styles from "./Info.module.css";
 
 import { Box, Container,Grid } from "@mui/material";
 
