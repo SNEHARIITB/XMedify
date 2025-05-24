@@ -20,11 +20,11 @@ export default function LandingPage(){
         <Top/>
         
         <Hero />
-        {/* <AddArea/>
+        <AddArea/>
         <Specialisation/>
-        <Specialist/> */}
+        <Specialist/>
         <CaringSection/>
-        {/* <BlogNews/> */}
+        <BlogNews/>
         <InfoStats/>
         
         <Faq/>
