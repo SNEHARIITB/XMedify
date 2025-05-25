@@ -1,0 +1,15 @@
+.input {
+  width: 300px !important;
+}
+
+.searchButton {
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+  background-color: #2196f3 !important;
+}
+.searchbox{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
