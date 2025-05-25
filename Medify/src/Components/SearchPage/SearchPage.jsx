@@ -128,6 +128,9 @@ const SearchPage = () => {
       console.error("Failed to fetch hospitals", error);
     }
   };
+// {hospitals.map((hospital) => (
+//   console.log("Hospital Name:",hospital["Hospital Name"])
+// ))}
 
 
   return (
@@ -209,6 +212,7 @@ const SearchPage = () => {
 
         {hospitals.map((hospital, index) => (
           <HospitalCard key={index} name={hospital["Hospital Name"]} city={hospital.City} state={hospital.State}/>
+          
         ))}
       
       </Box>

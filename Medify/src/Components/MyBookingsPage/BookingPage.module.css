@@ -69,6 +69,7 @@
 .hospitalName {
   color: #1ea1f1;
   font-weight: 600;
+  text-transform: none !important;
 }
 
 .tagsContainer {
