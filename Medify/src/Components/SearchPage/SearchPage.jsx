@@ -74,6 +74,7 @@ const SearchPage = () => {
     }
 
     fetchHospitals();
+    setCitySelected(city);
 
 
   },[]);
