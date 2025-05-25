@@ -64,7 +64,7 @@ const BookingPage = () => {
                 <Box className={styles.hospitalInfo}>
                   <div className={styles.hospitalIcon} />
                   <Box>
-                    <Typography variant="h6" className={styles.hospitalName}>
+                    <Typography variant="h3"  component="h3" className={styles.hospitalName}>
                       {booking.hospitalName}
                     </Typography>
                     <Typography variant="body2">
