@@ -66,7 +66,7 @@ const SearchPage = () => {
       try{
         const response = await axios(`https://meddata-backend.onrender.com/data?state=${state}&city=${city}`);
         setHospitals(response.data);
-        console.log("response.data", response.data);
+        //console.log("response.data", response.data);
       }
       catch(error){
         console.log(error);
@@ -123,7 +123,7 @@ const SearchPage = () => {
     try {
       const response = await axios(`https://meddata-backend.onrender.com/data?state=${stateSelected}&city=${citySelected}`);
       setHospitals(response.data);
-      console.log("response", response.data);
+      //console.log("response", response.data);
     } catch (error) {
       console.error("Failed to fetch hospitals", error);
     }
@@ -146,7 +146,7 @@ const SearchPage = () => {
           size="small"
           className={styles.input}
           onChange={(e) => setStateSelected(e.target.value)}
-          value={stateSelected}
+          value={stateSelected} 
           label="State"
         >
           {loadingStates ? (
