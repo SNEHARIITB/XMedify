@@ -27,7 +27,7 @@ const BookingPage = () => {
   }, []);
 
   const filteredBookings = bookings.filter((booking) =>
-    (booking.hospitalName || '').toLowerCase().includes(searchTerm.toLowerCase())
+    (booking["Hospital Name"]|| '').toLowerCase().includes(searchTerm.toLowerCase())
 
   );
 
@@ -67,7 +67,7 @@ const BookingPage = () => {
                     {/* <Typography variant="h3"  component="h3" className={styles.hospitalName}>
                       {booking.hospital.toLowerCase()}
                     </Typography> */}
-                    <h3 className={styles.hospitalName}>{booking.hospital.toLowerCase()}</h3>
+                    <h3 className={styles.hospitalName}>{booking["Hospital Name"]}</h3>
                     <Typography variant="body2">
                       <strong>{booking.city}, {booking.state}</strong>
                     </Typography>

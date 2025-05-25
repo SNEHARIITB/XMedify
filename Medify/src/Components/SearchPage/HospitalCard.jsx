@@ -45,7 +45,7 @@ const HospitalCard = ({ name, city, state }) => {
 
   const handleSlotSelect = (slotType, time) => {
     const booking = {
-      hospital: name,
+      "Hospital Name": name,
       city,
       state,
       slotType,
