@@ -38,7 +38,7 @@ const BookingPage = () => {
 
     <NavBar/>
 
-    <Typography variant="h4" className={styles.header}>My Bookings</Typography>
+    <Typography variant="h1" component="h1" className={styles.header}>My Bookings</Typography>
 
     <Box className={styles.container}>
       

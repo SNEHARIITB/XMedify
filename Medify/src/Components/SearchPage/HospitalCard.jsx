@@ -91,9 +91,11 @@ const HospitalCard = ({ name, city, state }) => {
           <Typography variant="body2" color="textSecondary">
             {city}, {state}
           </Typography>
-          <Typography variant="caption" color="textSecondary" sx={{ mt: 0.5 }}>
+          {/* <Typography variant="caption" color="textSecondary" sx={{ mt: 0.5 }}>
             {days[selectedDayIndex]}
-          </Typography>
+          </Typography> */}
+          <p className="dayLabel">{days[selectedDayIndex]}</p>
+
         </Box>
         <Button
           variant="contained"
@@ -134,9 +136,11 @@ const HospitalCard = ({ name, city, state }) => {
                 <AccordionDetails sx={{ p: 2 }}>
                   {Object.entries(appointmentSlots).map(([slotType, times]) => (
                     <Box key={slotType} mb={2}>
-                      <Typography variant="subtitle2" fontWeight={600} gutterBottom>
+                      {/* <Typography variant="subtitle2" fontWeight={600} gutterBottom>
                         {slotType}
-                      </Typography>
+                      </Typography> */}
+                      <p className="slotTypeLabel">{slotType}</p>
+
                       <Grid container spacing={1}>
                         {times.map((time) => (
                           <Grid key={`${slotType}-${time}`}>
