@@ -24,7 +24,7 @@ const HospitalCard = ({ name, city, state }) => {
       <AccordionSummary expandIcon="+">
         <Card variant="outlined" sx={{ width: '100%' }}>
           <CardContent>
-            <Typography variant="h6" fontWeight="bold">
+            <Typography variant="h3" fontWeight="bold">
               {name}
             </Typography>
             <Typography variant="body2">{city}, {state}</Typography>

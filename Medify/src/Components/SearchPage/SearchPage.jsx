@@ -180,7 +180,7 @@ const SearchPage = () => {
 
         </TextField>
 
-        <Button variant="contained" className={styles.searchButton} onClick={handleSearch}>
+        <Button variant="contained" type="submit" className={styles.searchButton} onClick={handleSearch}>
           Search
         </Button>
 
