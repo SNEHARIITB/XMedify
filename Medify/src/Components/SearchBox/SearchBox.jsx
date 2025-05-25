@@ -86,52 +86,61 @@ export default function SearchBox() {
     <Container className={styles.container}>
      
       <div className={styles.searchRow}>
-        <TextField
-          select
-          variant="outlined"
-          size="small"
-          className={styles.input}
-          onChange={(e) => setUsState(e.target.value)}
-          value={usState}
-          label="State"
+        <div id="state">
+          <TextField
+            select
+            variant="outlined"
+            size="small"
+            className={styles.input}
+            onChange={(e) => setUsState(e.target.value)}
+            value={usState}
+            label="State"
+          >
+            {loadingStates ? (
+              <MenuItem disabled>Loading States...</MenuItem>
+            ) : (
+              statesData.map((state) => (
+                <MenuItem key={state} value={state}>
+                  {state}
+                </MenuItem>
+              ))
+            )}
+          </TextField>
+        </div>
+
+        <div id="city">
+          <TextField
+            select
+            variant="outlined"
+            size="small"
+            className={styles.input}
+            onChange={(e) => setUsCity(e.target.value)}
+            value={usCity}
+            label="City"
+          >
+            {loadingCities ? (
+              <MenuItem disabled>Loading Cities...</MenuItem>
+            ) : (
+              cityData.map((city) => (
+                <MenuItem key={city} value={city}>
+                  {city}
+                </MenuItem>
+              ))
+            )}
+          </TextField>
+        </div>
+
+        <Button
+          variant="contained"
+          type="submit"
+          id="searchBtn"
+          className={styles.searchButton}
+          onClick={handleSearch}
         >
-          {loadingStates ? (
-            <MenuItem disabled>Loading States...</MenuItem>
-          ) : (
-            statesData.map((state) => (
-              <MenuItem key={state} value={state}>
-                {state}
-              </MenuItem>
-            ))
-          )}
-
-        </TextField>
-
-        <TextField
-          select
-          variant="outlined"
-          size="small"
-          className={styles.input}
-          onChange={(e) => setUsCity(e.target.value)}
-          value={usCity}
-          label="City"
-        >
-          {loadingCities ? (
-            <MenuItem disabled>Loading Cities...</MenuItem>
-          ) : (
-            cityData.map((city) => (
-              <MenuItem key={city} value={city}>
-                {city}
-              </MenuItem>
-            ))
-          )}
-
-        </TextField>
-
-        <Button variant="contained" type="submit" className={styles.searchButton} onClick={handleSearch}>
           Search
         </Button>
       </div>
+
 
         {error && (
           <Typography variant="body2" color="error" style={{ marginTop: "8px" }}>

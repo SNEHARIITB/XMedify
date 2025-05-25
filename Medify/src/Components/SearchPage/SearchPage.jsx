@@ -138,6 +138,7 @@ const SearchPage = () => {
 
       
       <Box className={styles.searchbox}>
+        <div id="state">
         <TextField
           select
           variant="outlined"
@@ -158,7 +159,8 @@ const SearchPage = () => {
           )}
 
         </TextField>
-
+        </div>
+        <div id="city">
         <TextField
           select
           variant="outlined"
@@ -179,8 +181,15 @@ const SearchPage = () => {
           )}
 
         </TextField>
+        </div>
 
-        <Button variant="contained" type="submit" className={styles.searchButton} onClick={handleSearch}>
+        <Button
+          variant="contained"
+          type="submit"
+          id="searchBtn"
+          className={styles.searchButton}
+          onClick={handleSearch}
+        >
           Search
         </Button>
 
@@ -188,6 +197,15 @@ const SearchPage = () => {
 
 
       <Box sx={{ width: '100%', maxWidth: 800, mx: 'auto', mt: 4 }}>
+
+        {hospitals.length > 0 && (
+          <Typography variant="h1" component="h1" sx={{ mb: 2, textAlign: 'center' , color: "black"}}>
+            {hospitals.length} medical center{hospitals.length > 1 ? 's' : ''} available in {citySelected.toLowerCase()}
+          </Typography>
+        )}
+
+
+
         {hospitals.map((hospital, index) => (
           <HospitalCard key={index} name={hospital["Hospital Name"]} city={hospital.City} state={hospital.State}/>
         ))}
