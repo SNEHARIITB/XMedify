@@ -1,5 +1,7 @@
 .container{
     height:535px;
+    display: flex;
+    align-items: flex-end;
     
 }
 .boximg{
